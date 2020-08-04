@@ -207,6 +207,7 @@ body {
   height: 600px;
   margin-right: auto;
   margin-left: auto;
+
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.8),
@@ -313,6 +314,8 @@ body {
 /* Our team */
 .picture-block {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .section.our-team {
   background-color: var(--secondary-background-color);
@@ -489,6 +492,16 @@ footer {
 .container.footer {
   display: flex;
 }
+
+.footer > div:not(:last-child) {
+  width: calc((50% - 45px) / 2);
+
+  margin-right: 30px;
+}
+.footer > div:last-child {
+  width: calc(50 - 15px);
+}
+
 .action-description {
   font-weight: 700;
   font-size: 14px;
@@ -498,12 +511,7 @@ footer {
   color: var(--primary-white-color);
   margin-bottom: 20px;
 }
-.footer-join {
-  margin-left: 69px;
-}
-.footer-form {
-  margin-left: 94px;
-}
+
 .footer-link {
   display: block;
   margin-top: 9px;
@@ -512,7 +520,10 @@ footer {
 .footer-add {
   margin-top: 20px;
 }
-
+.footer-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
 .sn-footer-icon {
   display: flex;
   justify-content: center;
@@ -610,6 +621,8 @@ footer {
 
 .portfolio-img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .gallery-form {
   padding: 20px 24px;
