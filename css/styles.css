@@ -217,8 +217,8 @@ body {
 
   background-image: linear-gradient(
       to right,
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
     url(../images/header.jpg);
   background-repeat: no-repeat;
@@ -355,7 +355,7 @@ body {
   letter-spacing: 0.03em;
 }
 .team-form {
-  padding: 30px 32px 24px 32px;
+  padding: 30px 32px 30px 32px;
 }
 
 .sn-icon {
@@ -768,4 +768,18 @@ footer {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+.btn-close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}
+.modal-icon {
+  width: 20px;
+  height: 20px;
 }
