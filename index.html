@@ -62,7 +62,7 @@
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="button primary" data-modal-open>
+          <button type="button" class="button order primary" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -470,14 +470,12 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button>
-          <svg>
-            <use href="./images/icons/close.svg"></use>
-          </svg>
-        </button>
+        <button href="" class="btn-close" data-modal-close></button>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
